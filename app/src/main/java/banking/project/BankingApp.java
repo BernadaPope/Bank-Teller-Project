@@ -19,7 +19,24 @@ public class BankingApp {
         scanner = new Scanner(System.in);
     }
     
+    public void run() {
+        Account account1 = new Account("1234", "Starry Sky");
+        Account account2 = new Account("5678", "Yellow Sun");
+    }
 
+    bank.addAccount(account1);
+    bank.addAccount(account2);
+
+    boolean running = true;
+    while(running)
+    {
+        displayMenu();
+        int userChoice = scanner.nextInt();
+        scanner.nextLine();
+        if (userChoice == 1) {
+            
+        }
+    }
 
     
 
