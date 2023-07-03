@@ -27,5 +27,4 @@ public class BankTest {
         assertEquals(account2, bank.accounts.get(account2));
     }
 }
-    }
 
