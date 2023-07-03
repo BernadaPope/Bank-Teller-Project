@@ -34,7 +34,19 @@ public class BankingApp {
         int userChoice = scanner.nextInt();
         scanner.nextLine();
         if (userChoice == 1) {
-            
+            displayAccounts();
+        }else if (userChoice == 2) {
+            makeDeposit();
+        } else if (userChoice == 3) {
+            makeWithdrawl();
+        } else if (userChoice == 4) {
+            checkBalance();
+        } else if (userChoice == 5) {
+            closeAccount();
+        } else if (userChoice == 6) {
+            running = false;
+        } else {
+            System.out.println("This is not a valid choice. Please make another selection.");
         }
     }
 
