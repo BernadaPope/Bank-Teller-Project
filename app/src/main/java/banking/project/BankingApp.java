@@ -18,24 +18,23 @@ public class BankingApp {
         accounts = new HashMap<>();
         scanner = new Scanner(System.in);
     }
-    
+
     public void run() {
         Account account1 = new Account("1234", "Starry Sky");
         Account account2 = new Account("5678", "Yellow Sun");
     }
 
-    bank.addAccount(account1);
-    bank.addAccount(account2);
+    bank.addAccount(account1);bank.addAccount(account2);
 
     boolean running = true;
-    while(running)
-    {
+    
+    while(running) {
         displayMenu();
         int userChoice = scanner.nextInt();
         scanner.nextLine();
         if (userChoice == 1) {
             displayAccounts();
-        }else if (userChoice == 2) {
+        } else if (userChoice == 2) {
             makeDeposit();
         } else if (userChoice == 3) {
             makeWithdrawl();
@@ -48,7 +47,8 @@ public class BankingApp {
         } else {
             System.out.println("This is not a valid choice. Please make another selection.");
         }
-    }
+    }scanner.close();
+}
 
     
 

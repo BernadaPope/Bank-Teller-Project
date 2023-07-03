@@ -4,7 +4,7 @@ public class Account {
     private String accountNumber;
     private String accountType;
     private Double accountBalance;
-    public Account() {}
+    public Account(String string, String string2) {}
     public Account(String accountNumber, String accountType, Double accountBalance) {
         this.accountNumber = accountNumber;
         this.accountType = accountType;
